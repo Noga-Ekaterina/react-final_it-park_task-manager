@@ -7,7 +7,7 @@
     "start": "node api/server.js",
     "dev": "concurrently \"vite\" \"npm run backend\"",
     "frontend": "vite",
-    "backend": "json-server --watch db.json --port 3001",
+    "backend": "json-server --watch api/db.json --port 3001",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
