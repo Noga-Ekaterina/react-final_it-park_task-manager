@@ -26,7 +26,7 @@ export const addTask = async (item) => {
 
       return await resp.json();
    } catch (error) {
-      return error.message;
+      alert(error.message)
    }
 };
 
@@ -46,7 +46,7 @@ export const updateTask = async (id ,patch) => {
 
       return await resp.json();
    } catch (error) {
-      return error.message;
+      alert(error.message)
    }
 };
 
