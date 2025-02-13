@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "node api/server.js",
     "dev": "concurrently \"vite\" \"npm run backend\"",
     "frontend": "vite",
     "backend": "json-server --watch db.json --port 3001",
@@ -14,6 +15,7 @@
   "dependencies": {
     "classnames": "^2.5.1",
     "formik": "^2.4.6",
+    "fs": "^0.0.1-security",
     "json-server": "^1.0.0-beta.3",
     "react": "^19.0.0",
     "react-countdown-circle-timer": "^3.2.1",
