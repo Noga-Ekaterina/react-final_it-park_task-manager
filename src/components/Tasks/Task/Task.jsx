@@ -21,7 +21,7 @@ const Task = ({task, updateTasks}) => {
       if (isPlaying){
          const pause={
             date: Date.now(),
-            timeLeft: getTimeLeft(task.date, task.duration)
+            timeLeft: getTimeLeft(task.date, task.duration)+actualTask.pauseDuration
          }
          const result= await updateTask(task.id, {pause})
 
