@@ -4,10 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "node api/server.js",
-    "dev": "concurrently \"vite\" \"npm run backend\"",
-    "frontend": "vite",
-    "backend": "json-server --watch api/db.json --port 3001",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

@@ -4,7 +4,7 @@ import {useGetRem} from "./useGetRem";
 import {updateTask} from "../../../api.js";
 import {getTimeLeft} from "../utils.js";
 
-const Timer = ({task, updateTasks, isPlaying}) => {
+const Timer = ({task, updateTasks, isPlaying, cangeIsDisabledBtns}) => {
    const rem= useGetRem()
 
    const getInitialRemainingTime = () => {
@@ -16,6 +16,7 @@ const Timer = ({task, updateTasks, isPlaying}) => {
 
    const handleComplete = () => {
       setTimeout(async ()=>{
+         cangeIsDisabledBtns(true)
          alert(`Задача ${task.title} провалена`)
          await updateTask(task.id, {status: "expired"})
          updateTasks()

@@ -6,7 +6,7 @@ export default defineConfig({
    server: {
       proxy: {
          '/api': {
-            target: 'http://localhost:3001/tasks',
+            target: 'https://tasks-api-six.vercel.app/api/tasks',
             changeOrigin: true,
             rewrite: (path) => path.replace(/^\/api/, ''),
          }
