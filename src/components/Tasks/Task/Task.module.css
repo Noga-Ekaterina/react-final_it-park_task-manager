@@ -1,0 +1,40 @@
+.task{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rem;
+  background: #fff;
+}
+
+.task_done{
+  background: #d5e9da;
+}
+
+.task_expired{
+  background: #e9d5d5;
+}
+
+.title{
+  width: 120rem;
+  font-size: 25rem;
+}
+
+.btns{
+  width: 120rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15rem;
+}
+
+.btn_done{
+  color: forestgreen;
+}
+
+.btn_pause{
+  font-weight: 800;
+  color: var(--c-darck);
+}
+
+.task button:disabled{
+  opacity: 0.5;
+}
