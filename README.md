@@ -1,8 +1,1 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Проект был создан на React для закрепления пройденного материала на курсе IT-ПАРК. Это веб-приложение позволяет пользователю добавлять задачи и отслеживать их выполнение с помощью таймера. А также, там есть возможность отсортировать задачи по трём критериям: активные, выполненные и проваленные.
